@@ -1,0 +1,411 @@
+$beige: #faf7f7;
+$midblue: #BED0D7;
+$lightblue:#E8EDEF;
+$grey:#4D4D4D;
+
+body {
+  font-family: "Montserrat", sans-serif;
+  a {
+      color:black;
+      text-decoration: none;
+  }
+  h1 {
+    font-size: 50px;
+    line-height: 70px;
+    font-family: "Montserrat", sans-serif;
+  }
+  h2 {
+    font-size: 32px;
+    line-height: 48px;
+    font-family: "Montserrat", sans-serif;
+  }
+  h3 {
+    font-size: 18px;
+    line-height: 26px;
+    font-family: "Montserrat", sans-serif;
+  }
+  p {
+    font-size: 16px;
+    line-height: 24px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-family: "Montserrat", sans-serif;
+  }
+  li {
+    font-size: 16px;
+    line-height: 24px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-family: "Montserrat", sans-serif;
+  }
+  button {
+    font-family: "Montserrat", sans-serif;
+  }
+}
+
+///Nav baren////
+div#nav {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  flex-flow: nowrap;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+div#leftnav {
+display: inline-block;
+}
+
+div#rightnav {
+  display: inline-block;
+}
+
+a {
+  flex: 100px;
+  margin-right: 40px;
+}
+
+
+///Intro picture+test////
+
+.centerimg75 {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 75%;
+  border-radius: 0% 0% 20% 0%;
+}
+
+section#intromain {
+  width: 90%;
+  margin: 10%;
+  background: white;
+}
+
+p#introtext {
+  display: inline-block;
+  width: auto;
+  max-width: 600px;
+  min-width: 0px;
+  margin-bottom: 30px;
+}
+
+///projects////
+
+.header {
+  width: 90%;
+  margin: 10%;
+  padding-top: 20px;
+}
+
+.casestudy {
+  display: inline-block;
+  margin-left: 10%;
+  margin-right: 10%;
+  width: 80%;
+  text-align: left;
+  padding-bottom: 60px;
+}
+
+div#casestudyh {
+  padding: 0px 0px 10px 0px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.borderradius {
+  border-radius: 10px;
+}
+
+.floatright {
+  float: right;
+}
+
+button {
+  width: 200px;
+  height: 50px;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  color: black;
+  background: #E8EDEF;
+  font-family: "Montserrat", sans-serif;
+}
+
+.readmorebutton:hover {
+  font-weight: bold;
+  text-decoration: underline;
+  background-color: #BED0D7;
+}
+
+
+///about me section on front page////
+
+.aboutme {
+  display: inline-block;
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-bottom: 10%;
+  width: 80%;
+  text-align: left;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #faf7f7;
+  border-radius: 10px;
+}
+
+div#aboutme {
+  display: block;
+  width: 50%;
+  height: auto;
+  position: relative;
+  align-self: flex-start;
+  float: left;
+}
+
+button#buttonaboutme {
+  width: 200px;
+  height: 50px;
+  font-size: 16px;
+  border: none;
+  color: black;
+  background: white;
+  margin-top: 20px;
+}
+
+button#buttonaboutme:hover {
+  width: 200px;
+  height: 50px;
+  font-size: 16px;
+  border: none;
+  color: black;
+  background: #BED0D7;
+  margin-top: 20px;
+}
+
+
+
+div#aboutmeimage {
+  padding: 20px;
+  max-width: 600px;
+  width: 50%;
+  height: auto;
+  position: relative;
+}
+
+//footer section////
+
+footer {
+  margin-top: 160px;
+  margin-bottom: 50px;
+}
+
+a {
+  text-decoration: none;
+  Color: black;
+  font-size: 16px;
+  line-height: 24px;
+  font-family: "Montserrat", sans-serif;
+}
+
+//about me page //
+
+section#aboutme {
+  width: 100%;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  display: inline-block;
+}
+
+div#aboutme {
+  width: 40%;
+  display: block;
+  margin-left: 5%;
+  margin-right: 5%;
+  float: left;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+aside {
+  width: 40%;
+  float: right;
+  display: block;
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-top: 100px;
+}
+
+/*Mobilversion (Upp till Padda portrait)*/
+@media (max-width: 768px) {
+ aside img {
+width: 100%;
+}
+}
+/*Padda portrait*/
+@media (min-width: 769px) and (max-width: 992px) {
+aside img {
+width: 85%;
+}
+}
+/*Padda landscape & Desktop*/
+@media (min-width: 993px) {
+aside img {
+width: 70%;
+}
+}
+
+.grey {
+  color:$grey;
+}
+
+
+///CV part of about me page///
+
+section#experience {
+  background: $beige;
+  display: inline-block;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+div#left {
+  margin: 5%;
+  width: 40%;
+  float: left;
+}
+
+div#right {
+  margin: 5%;
+  width: 40%;
+  float: right;
+}
+
+ul#bulletpointtext {
+
+  margin-top: 0px;
+  margin-bottom: 20px;
+  margin-left: 0;
+  margin-right: 0;
+  padding-left: 20px;
+  background: $beige;
+}
+
+li#bulletpointtext {
+  color: black;
+  line-height: 24px;
+}
+
+///willys.se///
+///Case study header////
+section#caseheader {
+  width: 100%;
+  display: block;
+  height: 700px;
+
+}
+
+div#leftheader {
+  float: left;
+  margin: 0px;
+  padding: 0px;
+  display:inline-block;
+  width:50%;
+}
+
+
+div#rightheader {
+  float: right;
+  margin: 5%;
+  padding: 0px;
+  display: inline-block;
+  width:40%;
+}
+
+
+div#caseheader {
+  border-bottom: 1px solid grey;
+  width: auto;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  display: block;
+}
+.caseheader {
+  display: inline-block;
+}
+
+////case study sections about the project///
+section#casestudy {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  display: inline-block;
+}
+
+.white {
+  background-color: white;
+}
+
+.beige {
+  background-color: $beige;
+}
+
+
+///Lightbox modal med java
+
+.row:after {
+  display: table;
+  clear: both;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: black;
+}
+
+/* Modal Content */
+.modal-content {
+  position: relative;
+  background-color: #fefefe;
+  margin: auto;
+  width: 50%;
+}
+
+/* The Close Button */
+.close {
+  color: white;
+  position: absolute;
+  top: 10px;
+  right: 25px;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #999;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+img.cursor {
+  cursor: pointer;
+}
+
+
+.blue-background {
+background-color: blue;
+}
